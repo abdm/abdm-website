@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.8), rgba(41, 128, 185, 0.8)); /* Semi-transparent blue gradient */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-out;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Section styles */
+section {
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for header */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button styles */
+button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-3px);
+}
+
+/* Language section styles */
+.language {
+    margin-bottom: 20px;
+}
+
+.urdu,
+.hindi,
+.telugu {
+    font-family: "Noto Sans", Arial, sans-serif;
+    line-height: 1.8;
+}
+
+/* Styling for the language containers */
+.language h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+.language p {
+    font-size: 1rem;
+    color: #555;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Centered button at the bottom */
+div[style="text-align: center; margin-top: 20px;"] {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.language ul {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.language ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Styling for RTL (right to left) content */
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
